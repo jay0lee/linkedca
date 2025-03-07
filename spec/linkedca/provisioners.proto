@@ -147,10 +147,11 @@ message ACMEProvisioner {
 		DEVICE_ATTEST_01 = 4;
 	}
 	enum AttestationFormatType {
-		NONE = 0;
-		APPLE = 1;
-		STEP  = 2;
-		TPM   = 3;
+		NONE      = 0;
+		APPLE     = 1;
+		STEP      = 2;
+		TPM       = 3;
+		CHROMEOS  = 4;
 	}
 	bool force_cn = 1;
 	bool require_eab = 2;

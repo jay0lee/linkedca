@@ -155,10 +155,11 @@ func (ACMEProvisioner_ChallengeType) EnumDescriptor() ([]byte, []int) {
 type ACMEProvisioner_AttestationFormatType int32
 
 const (
-	ACMEProvisioner_NONE  ACMEProvisioner_AttestationFormatType = 0
-	ACMEProvisioner_APPLE ACMEProvisioner_AttestationFormatType = 1
-	ACMEProvisioner_STEP  ACMEProvisioner_AttestationFormatType = 2
-	ACMEProvisioner_TPM   ACMEProvisioner_AttestationFormatType = 3
+	ACMEProvisioner_NONE      ACMEProvisioner_AttestationFormatType = 0
+	ACMEProvisioner_APPLE     ACMEProvisioner_AttestationFormatType = 1
+	ACMEProvisioner_STEP      ACMEProvisioner_AttestationFormatType = 2
+	ACMEProvisioner_TPM       ACMEProvisioner_AttestationFormatType = 3
+	ACMEProvisioner_CHROMEOS  ACMEProvisioner_AttestationFormatType = 4
 )
 
 // Enum value maps for ACMEProvisioner_AttestationFormatType.
@@ -168,12 +169,14 @@ var (
 		1: "APPLE",
 		2: "STEP",
 		3: "TPM",
+		4: "CHROMEOS",
 	}
 	ACMEProvisioner_AttestationFormatType_value = map[string]int32{
-		"NONE":  0,
-		"APPLE": 1,
-		"STEP":  2,
-		"TPM":   3,
+		"NONE":      0,
+		"APPLE":     1,
+		"STEP":      2,
+		"TPM":       3,
+		"CHROMEOS":  4,
 	}
 )
 
